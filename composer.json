@@ -1,7 +1,7 @@
 {
-    "name": "horde/text-filter-jsmin",
+    "name": "horde/text_filter_jsmin",
     "description": "Text filtering and conversion library - JSMin driver",
-    "type": "library",
+    "type": "horde-library",
     "homepage": "https://www.horde.org",
     "license": "JSMin",
     "authors": [
@@ -12,21 +12,19 @@
         }
     ],
     "version": "1.0.3",
-    "time": "2017-11-11",
+    "time": "2020-10-27",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com"
         }
     ],
     "require": {
+        "horde/horde-installer-plugin": "dev-master",
         "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Text_Filter": "^2.2"
+        "horde/text_filter": "dev-master"
     },
-    "replace": {
-        "pear-pear.horde.org/Horde_Text_Filter_Jsmin": "1.*",
-        "pear-horde/Horde_Text_Filter_Jsmin": "1.*"
-    },
+    "suggest": {},
     "autoload": {
         "psr-0": {
             "Horde_Text_Filter_Jsmin": "lib/"
